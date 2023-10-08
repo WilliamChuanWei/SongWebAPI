@@ -18,10 +18,8 @@
 	</button>
 	<!-- Topbar Search -->
 	    <div class="narbar-brand">
-	        <h2 class="font-weight-bold mb-3">HR有限公司 人力資源系統</h2>
-	        <span class="text-dark">特休剩餘：<strong id="annivLDay"></strong>日</span><a href="#" id="annivCD" class="text-danger warning"> (請於 <strong id="anniDate"></strong> 前使用完畢)</a><br/>
-	        <span class="text-dark">加班總計時數：【${sessionScope.sumHours}】小時&nbsp</span><span class="text-danger warning">(請注意加班時數是否正確)</span><br/>
-	        <span class="text-dark">加班剩餘時數：【${sessionScope.remainingHours}】小時&nbsp</span><span class="text-danger warning">(請注意剩餘時數)</span>
+	        <h2 class="font-weight-bold mb-3">Song API</h2>
+
 	    </div> 
 
 	<!-- 0419 alert to do -->
@@ -56,17 +54,17 @@
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title mx-auto" id="exampleModalLabel">確定要登出？</h5>
+				<h5 class="modal-title mx-auto" id="exampleModalLabel"></h5>
 				<!-- <button class="close" type="button" data-dismiss="modal" aria-label="Close"> -->
 				<!-- <span aria-hidden="true">×</span> -->
 				<!-- </button> -->
 			</div>
 			<div class="modal-body">
-				<span>提醒：未儲存之工作項目將會遺失</span><br /> <span>請確認已完成當前工作，再選擇【登出】。</span>
+				<span></span><br /> <span></span>
 			</div>
 			<div class="modal-footer justify-content-center">
-				<button class="btn btn-secondary" type="button" data-dismiss="modal">取消</button>
-				<a class="btn btn-primary" href="<c:url value='/logout' />">登出</a>
+				<button class="btn btn-secondary" type="button" data-dismiss="modal"></button>
+				<a class="btn btn-primary" href="<c:url value='/logout' />"></a>
 			</div>
 		</div>
 	</div>

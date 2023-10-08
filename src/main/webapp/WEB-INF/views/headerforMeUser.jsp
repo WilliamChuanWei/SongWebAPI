@@ -34,12 +34,12 @@
                 <a class="nav-link" href="<c:url value='/index' />">
 
                     <i class='fas fa-home' style='font-size:22px'></i>
-                    <span>主頁</span></a>
+                    <span></span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link collapsed" href="<c:url value='/pages' />">
                     <i class='fas fa-clock' style='font-size:22px'></i>
-                    <span id="listname">出勤管理</span>
+                    <span id="listname"></span>
                 </a>
             </li>
             <li class="nav-item">            
@@ -47,7 +47,7 @@
                 <a class="nav-link collapsed" href="<c:url value='/personnel' />">
 
                     <i class='fas fa-user-tie' style='font-size:22px'></i>
-                    <span id="listname">人員管理</span>
+                    <span id="listname"></span>
                 </a>
             </li>
         </ul>
@@ -67,10 +67,8 @@
                     </button>
                     <!-- Topbar Search -->                    
                         <div class="narbar-brand">
-                            <h2 class="font-weight-bold mb-3">HR有限公司 人力資源系統</h2>
-                            <span class="text-dark">特休剩餘時數：【】小時&nbsp</span><span class="text-danger warning">(請於 【日期】 前使用完畢)</span><br/>
-                            <span class="text-dark">加班總計時數：【${sessionScope.sumHours}】小時&nbsp</span><span class="text-danger warning">(請注意加班時數是否正確)</span><br/>
-                            <span class="text-dark">加班剩餘時數：【${sessionScope.remainingHours}】小時&nbsp</span><span class="text-danger warning">(請注意剩餘時數)</span>
+                            <h1 class="font-weight-bold mb-3">Song API</h1>
+
                         </div>  
 
                         <!-- 0419 alert to do -->
@@ -89,7 +87,6 @@
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    登出
                                 </a>
                             </div>
                         </li>

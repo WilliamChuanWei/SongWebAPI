@@ -85,9 +85,7 @@
                     </button>
                     <!-- Topbar Search -->                    
                         <div class="narbar-brand">
-                            <h2 class="font-weight-bold mb-3">HR有限公司 人力資源系統</h2>
-                            <span class="text-dark">特休剩餘時數：【】小時&nbsp</span><span class="text-danger warning">(請於 【日期】 前使用完畢)</span><br/>
-                            <span class="text-dark">加班剩餘時數：【】小時&nbsp</span><span class="text-danger warning">(請注意到期時間)</span>
+                            <h2 class="font-weight-bold mb-3">Song API</h2>
                         </div>  
 
                         <!-- 0419 alert to do -->
@@ -99,7 +97,7 @@
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="###" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">員編員編員編</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
                                 <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
@@ -107,7 +105,6 @@
                                 aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    登出
                                 </a>
                             </div>
                         </li>
@@ -130,7 +127,7 @@
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                                 第一行的1/4</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">##內容寫這裡</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"></div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-calendar fa-2x text-gray-300"></i>

@@ -32,14 +32,14 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title mx-auto" id="exampleModalLabel">確定要登出？</h5>
+                    <h5 class="modal-title mx-auto" id="exampleModalLabel"></h5>
                     <!-- <button class="close" type="button" data-dismiss="modal" aria-label="Close"> -->
                         <!-- <span aria-hidden="true">×</span> -->
                     <!-- </button> -->
                 </div>
                 <div class="modal-body">
-                    <span>提醒：未儲存之工作項目將會遺失</span><br/>
-                    <span>請確認已完成當前工作，再選擇【登出】。</span>
+                    <span></span>
+                    <span></span>
                 </div>
                 <div class="modal-footer justify-content-center">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">取消</button>                  

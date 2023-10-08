@@ -14,7 +14,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>HR有限公司 人力資源系統</title>
+<title>Song API</title>
 
 <!-- Custom fonts for this template-->
 
@@ -71,7 +71,7 @@
 									Revisit query</div>
 								<div class="h5 mb-0 font-weight-bold text-gray-800 text-center">
 									<a href="<c:url value='/EmpSignQuery' />"
-										class="text-decoration-none stretched-link">補簽查詢</a>
+										class="text-decoration-none stretched-link"></a>
 								</div>
 							</div>
 							<div class="col-auto">
@@ -92,7 +92,7 @@
 									Overtime query</div>
 								<div class="h5 mb-0 font-weight-bold text-gray-800 text-center">
 									<a href="<c:url value='/employeeQuery' />"
-										class="text-decoration-none stretched-link">加班查詢</a>
+										class="text-decoration-none stretched-link"></a>
 								</div>
 							</div>
 							<div class="col-auto">
@@ -113,7 +113,7 @@
 									Leave query</div>
 								<div class="h5 mb-0 font-weight-bold text-gray-800 text-center">
 									<a href="<c:url value='/Leave/MyLeaveApply' />"
-										class="text-decoration-none stretched-link">請假查詢</a>
+										class="text-decoration-none stretched-link"></a>
 								</div>
 							</div>
 							<div class="col-auto">

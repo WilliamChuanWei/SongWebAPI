@@ -12,7 +12,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>HR有限公司 人力資源系統</title>
+    <title>Song API</title>
 
     <!-- Custom fonts for this template-->
     
@@ -54,18 +54,18 @@
             <li class="nav-item">
                 <a class="nav-link" href="<c:url value='/' />">
                     <i class='fas fa-home' style='font-size:22px'></i>
-                    <span>主頁</span></a>
+                    <span></span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link collapsed" href="<c:url value='pages' />">
                     <i class='fas fa-clock' style='font-size:22px'></i>
-                    <span id="listname">出勤管理</span>
+                    <span id="listname"></span>
                 </a>
             </li>
             <li class="nav-item">            
                 <a class="nav-link collapsed" href="<c:url value='pages' />">
                     <i class='fas fa-user-tie' style='font-size:22px'></i>
-                    <span id="listname">人員管理</span>
+                    <span id="listname"></span>
                 </a>
             </li>
         </ul>
@@ -85,9 +85,7 @@
                     </button>
                     <!-- Topbar Search -->                    
                         <div class="narbar-brand">
-                            <h2 class="font-weight-bold mb-3">HR有限公司 人力資源系統</h2>
-                            <span class="text-dark">特休剩餘時數：【】小時&nbsp</span><span class="text-danger warning">(請於 【日期】 前使用完畢)</span><br/>
-                            <span class="text-dark">加班剩餘時數：【】小時&nbsp</span><span class="text-danger warning">(請注意到期時間)</span>
+                            <h2 class="font-weight-bold mb-3">Song aPI</h2>
                         </div>  
 
                         <!-- 0419 alert to do -->
@@ -164,8 +162,6 @@
                     <!-- </button> -->
                 </div>
                 <div class="modal-body">
-                    <span>提醒：未儲存之工作項目將會遺失</span><br/>
-                    <span>請確認已完成當前工作，再選擇【登出】。</span>
                 </div>
                 <div class="modal-footer justify-content-center">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">取消</button>

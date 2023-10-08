@@ -12,7 +12,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>HR有限公司 人力資源系統</title>
+    <title>Song API</title>
 
     <!-- Custom fonts for this template-->
     

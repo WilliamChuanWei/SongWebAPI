@@ -26,35 +26,13 @@
             <!-- Sidebar - Brand -->
             <div class="sidebar-brand-icon">
             </div>
-            <div class="sidebar-brand-text mx-auto">
-                <img id="logo" src="img/logo_frame.png">
-            </div>
+          
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
             <!-- Pages Collapse Menu -->
-            <li class="nav-item">
-
-                <a class="nav-link" href="<c:url value='/index' />">
-
-                    <i class='fas fa-home' style='font-size:22px'></i>
-                    <span style='font-size:18px'>主頁</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="<c:url value='/pages' />">
-                    <i class='fas fa-clock' style='font-size:22px'></i>
-                    <span id="listname" style='font-size:18px'>出勤管理</span>
-                </a>
-            </li>
-            <li class="nav-item">            
-
-                <a class="nav-link collapsed" href="<c:url value='/personnel' />">
-
-                    <i class='fas fa-user-tie' style='font-size:22px'></i>
-                    <span id="listname" style='font-size:18px'>人員管理</span>
-                </a>
-            </li>
+           
         </ul>
         <!-- End of Sidebar -->
 
@@ -72,10 +50,7 @@
                     </button>
                     <!-- Topbar Search -->                    
                         <div class="narbar-brand">
-                            <h2 class="font-weight-bold mb-3">HR有限公司 人力資源系統</h2>
-                            <span class="text-dark">特休剩餘：<strong id="annivLDay"></strong>日</span><a href="#" id="annivCD" class="text-danger warning"> (請於 <strong id="anniDate"></strong> 前使用完畢)</a><br/>
-                            <span class="text-dark">加班總計時數：【${sessionScope.sumHours}】小時&nbsp</span><span class="text-danger warning">(請注意加班時數是否正確)</span><br/>
-                            <span class="text-dark">加班剩餘時數：【${sessionScope.remainingHours}】小時&nbsp</span><span class="text-danger warning">(請注意剩餘時數)</span>
+                            <h1 class="font-weight-bold mb-3">Song API</h1>
                         </div>  
 
                         <!-- 0419 alert to do -->
@@ -94,7 +69,6 @@
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    登出
                                 </a>
                             </div>
                         </li>
@@ -106,15 +80,15 @@
 	var todayD = new Date().toISOString().slice(0,10);
 	let annivD = new Date("${sessionScope.loginModel.employedDate}");
 	annivD.setFullYear(new Date().getFullYear());
-	//無條件進位年差
+
 	var diff = Math.ceil(Math.round((annivD.setTime(annivD.getTime())-recruitD.setTime(recruitD.getTime()))/1000/60/60/24/365));
 	annivLDay = diff*7;
 	$("#annivLDay").text(annivLDay);
 	if(new Date > annivD){
-// 		console.log("到職日：${sessionScope.loginModel.employedDate}, 年資周年紀念 已過去, 今年特休總額："+annivLDay+"天");
+
 		annivD.setFullYear(annivD.getFullYear()+1);
 	} else{
-// 		console.log("到職日：${sessionScope.loginModel.employedDate}, 年資周年紀念 還沒到, 今年特休總額："+annivLDay+"天");
+
 	}
 	var due = annivD.toISOString().slice(0,10);
 	$("#anniDate").text(due);
