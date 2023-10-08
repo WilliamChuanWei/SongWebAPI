@@ -1,8 +1,9 @@
-package com.hr.personnel.repository;
+package edu.psgv.sweng861.repository;
 
 import java.util.List;
 
-import com.hr.personnel.model.Song;
+import edu.psgv.sweng861.model.Song;
+
 
 public interface SongRepository {
 

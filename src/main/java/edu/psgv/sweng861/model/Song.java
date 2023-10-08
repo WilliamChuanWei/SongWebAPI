@@ -1,4 +1,4 @@
-package com.hr.personnel.model;
+package edu.psgv.sweng861.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

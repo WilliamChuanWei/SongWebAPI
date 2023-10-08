@@ -1,4 +1,4 @@
-package com.hr.personnel.service.impl;
+package edu.psgv.sweng861.service.impl;
 
 
 import java.util.List;
@@ -9,9 +9,10 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.hr.personnel.model.Song;
-import com.hr.personnel.repository.SongRepository;
-import com.hr.personnel.service.SongService;
+import edu.psgv.sweng861.model.Song;
+import edu.psgv.sweng861.repository.SongRepository;
+import edu.psgv.sweng861.service.SongService;
+
 
 @Service
 @Transactional

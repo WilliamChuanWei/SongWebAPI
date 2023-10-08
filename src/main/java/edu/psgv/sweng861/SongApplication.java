@@ -1,4 +1,4 @@
-package com.hr;
+package edu.psgv.sweng861;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,7 +9,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 //@SpringBootApplication(exclude={DataSourceAutoConfiguration.class})
-@ComponentScan("com.hr")
+@ComponentScan("edu.psgv.sweng861")
 public class SongApplication {
 
 	public static void main(String[] args) {

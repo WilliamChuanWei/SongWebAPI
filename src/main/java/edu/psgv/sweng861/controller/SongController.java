@@ -1,4 +1,4 @@
-package com.hr.personnel.controller;
+package edu.psgv.sweng861.controller;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -25,9 +25,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
-
-import com.hr.personnel.model.Song;
-import com.hr.personnel.service.SongService;
+import edu.psgv.sweng861.model.Song;
+import edu.psgv.sweng861.service.SongService;
 
 
 @Controller

@@ -1,9 +1,9 @@
-package com.hr.personnel.service;
+package edu.psgv.sweng861.service;
 
 import java.util.List;
 import java.util.Map;
 
-import com.hr.personnel.model.Song;
+import edu.psgv.sweng861.model.Song;
 
 public interface SongService {
 

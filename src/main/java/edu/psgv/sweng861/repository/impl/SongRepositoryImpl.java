@@ -1,4 +1,4 @@
-package com.hr.personnel.repository.impl;
+package edu.psgv.sweng861.repository.impl;
 
 import java.util.List;
 
@@ -11,8 +11,8 @@ import javax.persistence.criteria.Root;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.hr.personnel.model.Song;
-import com.hr.personnel.repository.SongRepository;
+import edu.psgv.sweng861.model.Song;
+import edu.psgv.sweng861.repository.SongRepository;
 
 @Repository
 public class SongRepositoryImpl implements SongRepository {
