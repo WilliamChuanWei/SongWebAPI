@@ -21,12 +21,18 @@ public class SongServiceImpl implements SongService {
 	@Autowired
 	SongRepository songRepository;
 
+	/**
+	 * Loading all song in favorite List.
+	 */
 	@Override
 	public List<Song> loadAllFavorite() {
 		
 		return songRepository.loadAllFavorite();
 	}
 
+	/**
+	 * Add a new song to favorite list.
+	 */
 	@Override
 	public Song addFavorite(Map<String, String> inputMap) {
 		
@@ -45,6 +51,9 @@ public class SongServiceImpl implements SongService {
 		return song;
 	}
 
+	/**
+	 * Remove a song to favorite list.
+	 */
 	@Override
 	public Song removeFavorite(Map<String, String> inputMap) {
 

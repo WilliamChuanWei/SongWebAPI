@@ -38,12 +38,17 @@ public class SongController {
 	
 	public static void main(String args[]) {
 		
-		new SongController().searchBySongName("My heart will go on");
+		new SongController().searchBySongName("");
 	}
 	
 	@Autowired
 	SongService songService;
 	
+	/**
+	 * Search songs via Last FM API and return to front end.
+	 * @param searchSong
+	 * @return
+	 */
 	@PostMapping(path="/searchBySongName")
 	public @ResponseBody List<Song> searchBySongName(
 			@RequestParam(name = "searchSong") String searchSong) {
@@ -74,7 +79,7 @@ public class SongController {
 				
 				JSONObject json = (JSONObject) parser.parse(isr);
 				
-				printNewsJsonMap(json, 0, songList);
+				parseJsonData(json, 0, songList);
 				
 //				System.out.println("SongList size is: " +  songList.size());
 //				
@@ -95,12 +100,18 @@ public class SongController {
 		return songList;
 	}
 	
+	/**
+	 * Loading all song in favorite List.
+	 */
 	@GetMapping(path="/loadAllFavorite")
 	public @ResponseBody List<Song> loadAllFavorite() {
 		
 		return songService.loadAllFavorite();
 	}
 
+	/**
+	 * Add a new song to favorite list.
+	 */
 	@PostMapping(path="/addFavorite", consumes="application/json")
 	@ResponseStatus(value = HttpStatus.OK)
 	public @ResponseBody Song addFavorite(@RequestBody Map<String, String> inputMap) {
@@ -110,6 +121,9 @@ public class SongController {
 		return song;
 	}
 	
+	/**
+	 * Remove a new song to favorite list.
+	 */
 	@DeleteMapping(path="/removeFavorite", consumes="application/json")
 	@ResponseStatus(value = HttpStatus.OK)
 	public @ResponseBody Song removeFavorite(	@RequestBody Map<String, String> inputMap) {
@@ -119,8 +133,15 @@ public class SongController {
 		return song;
 	}
 	
+	/**
+	 * Parse json data retrieved from Last FM API.
+	 * @param jsonObject
+	 * @param tab
+	 * @param songList
+	 * @return
+	 */
 	@SuppressWarnings("unchecked")
-	private List<Song> printNewsJsonMap(Object jsonObject, int tab, List<Song> songList) {
+	private List<Song> parseJsonData(Object jsonObject, int tab, List<Song> songList) {
 		
 		int tabCount = tab;
 		
@@ -141,7 +162,7 @@ public class SongController {
 				
 				if(entry.getValue() instanceof String) {
 					
-					//System.out.println(tabString + entry.getKey() + ": " + entry.getValue());
+					System.out.println(tabString + entry.getKey() + ": " + entry.getValue());
 					
 					String key = (String) entry.getKey();
 					
@@ -151,14 +172,14 @@ public class SongController {
 					
 				} else {
 					
-					//System.out.println(tabString + entry.getKey());
+					System.out.println(tabString + entry.getKey());
 					
-					printNewsJsonMap(entry.getValue(), tabCount + 1, songList);
+					parseJsonData(entry.getValue(), tabCount + 1, songList);
 				}
 			}
 			if(!song.isEmpty()) {
 				
-				System.out.println(song.toString());
+				//System.out.println(song.toString());
 				
 				songList.add(song);
 			}			
@@ -172,11 +193,11 @@ public class SongController {
 					
 				if(json instanceof String || json instanceof Long || json instanceof Double) {
 					
-					System.out.println(tabString + json.toString());
+					//System.out.println(tabString + json.toString());
 					
 				} else {
 					
-					printNewsJsonMap(json, tabCount + 1, songList);
+					parseJsonData(json, tabCount + 1, songList);
 				}
 			}
 		}
@@ -184,6 +205,13 @@ public class SongController {
 		return songList;
 	}
 
+
+	/**
+	 * Put returned value into a song Object.
+	 * @param song
+	 * @param key
+	 * @param value
+	 */
 	private void setSongValue(Song song, String key, String value) {
 		
 		//System.out.println("key is " + key + ", value is " + value);

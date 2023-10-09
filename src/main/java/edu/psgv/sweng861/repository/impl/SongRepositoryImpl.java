@@ -20,6 +20,9 @@ public class SongRepositoryImpl implements SongRepository {
 	@Autowired
 	EntityManager entityManager;
 	
+	/**
+	 * Loading all song in favorite List.
+	 */
 	@Override
 	public List<Song> loadAllFavorite() {
 
@@ -37,6 +40,9 @@ public class SongRepositoryImpl implements SongRepository {
 	}
 
 
+	/**
+	 * Add a new song to favorite list.
+	 */
 	@Override
 	public void addFavorite(Song song) {
 
@@ -44,6 +50,9 @@ public class SongRepositoryImpl implements SongRepository {
 	}
 
 
+	/**
+	 * Remove a song to favorite list.
+	 */
 	@Override
 	public void removeFavorite(Song song) {
 		
